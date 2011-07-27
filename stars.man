@@ -1,0 +1,31 @@
+usage()
+{
+	fprintf(stderr,"stars [-AMXruw][-B[0123]][-a#][-b#][-c#][-d#][-x xmid][-y ymid][-H#][-W#]\n");
+	fprintf(stderr,"\tWhere: -M indicates use monochrome\n");
+	fprintf(stderr,"\t       -S indicates show midpt\n");
+	fprintf(stderr,"\t       -X indicates randomly walk the midpt\n");
+	fprintf(stderr,"\t       -r indicates put the ship in reverse\n");
+	fprintf(stderr,"\t       -u displays this message\n");
+	fprintf(stderr,"\t       -w indicates put the ship in warp\n");
+	fprintf(stderr,"\t       -B# specifies the initial star size\n");
+	fprintf(stderr,"\t       -H# specifies the initial window height\n");
+	fprintf(stderr,"\t       -W# specifies the initial window width\n");
+	fprintf(stderr,"\t       -a# specifies the inital 'x' velocity\n");
+	fprintf(stderr,"\t       -b# specifies the inital 'y' velocity\n");
+	fprintf(stderr,"\t       -c# specifies the star color\n");
+	fprintf(stderr,"\t       -d# specifies the duration of display\n");
+	fprintf(stderr,"\tDuring display :\n");
+	fprintf(stderr,"\t  [hjklHJKL] rogue-like control of midpt movement\n");
+	fprintf(stderr,"\t        '.' stops the motion of the midpt\n");
+	fprintf(stderr,"\t        '+' resets the midpt to screen center\n");
+	fprintf(stderr,"\t  '>'or '<' increases/decreases the delay (text mode)\n");
+	fprintf(stderr,"\t     b or B selects star size\n");
+	fprintf(stderr,"\t     c or C toggles all/one color (graphics mode only)");
+	fprintf(stderr,"\n\t     t or T toggles random walk of midpt\n");
+	fprintf(stderr,"\t     x or X clears the screen\n");
+	fprintf(stderr,"\t     r or R toggles reverse/forward\n");
+	fprintf(stderr,"\t     s or S toggles midpt display\n");
+	fprintf(stderr,"\t     w or W toggles warp/normal\n");
+	fprintf(stderr,"\t     q or Q exits\n");
+	exit(1);
+}

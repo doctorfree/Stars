@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Stars: class resource file for stars
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+Stars*resizable:	TRUE
+! Stars*framework*width:	450
+! Stars*framework*height:	350
+Stars*Foreground:	Cyan
+Stars*bottomShadowColor:	Gray
+Stars*activeBottomShadowColor:	Gray
+Stars*background:	black
+Stars*topAttachment:	ATTACH_POSITION
+Stars*bottomAttachment:	ATTACH_POSITION
+Stars*leftAttachment:	ATTACH_POSITION
+Stars*rightAttachment:	ATTACH_POSITION
+Stars*drawing_canvas*leftPosition:	01
+Stars*drawing_canvas*rightPosition:	99
+Stars*drawing_canvas*topPosition:	01
+Stars*drawing_canvas*bottomPosition:	90
+Stars*go_button*topPosition:	91
+Stars*go_button*bottomPosition:	99
+Stars*go_button*leftPosition:	01
+Stars*go_button*rightPosition:	24
+Stars*stop_button*topPosition:	91
+Stars*stop_button*bottomPosition:	99
+Stars*stop_button*leftPosition:	26
+Stars*stop_button*rightPosition:	49
+Stars*warp_button*topPosition:	91
+Stars*warp_button*bottomPosition:	99
+Stars*warp_button*leftPosition:	51
+Stars*warp_button*rightPosition:	74
+Stars*quit_button*topPosition:	91
+Stars*quit_button*bottomPosition:	99
+Stars*quit_button*leftPosition:	76
+Stars*quit_button*rightPosition:	99
+Stars*go_button*labelString:   STOP
+Stars*stop_button*labelString:   FORWARD
+Stars*warp_button*labelString:   IMPULSE ON
+Stars*quit_button*labelString:   SELF DESTRUCT
+Stars*indicatorOn:   False
+Stars*appDefaultsFileInstalled:   True

@@ -1,0 +1,18 @@
+XCOMM
+XCOMM	Imakefile for stars, by Ron Record
+XCOMM
+        DEPLIBS = $(DEPXLIB)
+#		 BINDIR = /usr/local/bin
+#         MANDIR = /usr/local/man/man1
+      MANSUFFIX = 1
+LOCAL_LIBRARIES = XmClientLibs 
+  SYS_LIBRARIES = -lm
+       INCLUDES = -I.
+           SRCS = stars.c line.c
+           OBJS = stars.o line.o
+
+ComplexProgramTarget(stars)
+
+InstallAppDefaults(Stars)
+
+install:: install.man

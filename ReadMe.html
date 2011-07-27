@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<TITLE>stars</TITLE>
+</HEAD>
+<BODY>
+<H1>stars</H1>
+<P>
+Simulate the viewport of a starship
+<DL>
+<DT><B>Authored and Contributed by</B>
+<DD>Ronald Joe Record
+<DT><B>Restrictions</B>
+<DD>Copyright 1993, 1994 Ronald Joe Record
+
+<DT><B>Description</B>
+<DD>
+Stars is an X11 client that simulates stars rushing past or receding
+from a viewport. The interactive controls allow the user to control 
+the size and shape of the stars as well as the direction of their movement,
+even causing them to wander about the screen.
+<DT><B>Build</B>
+<DD>
+To build the stars binary, either use the Imakefile or the 
+sample makefile - Makefile.std. To build with the Imakefile, first type
+"xmkmf" or "imake -DUseInstalled -I/usr/lib/X11/config" if your system 
+doesn't have xmkmf. Then just type "make" and the stars binary will be built.
+<P>
+The manual pages can be formatted by typing "nroff -man stars.man > stars.doc" 
+
+<DT><B>Install</B>
+<DD>
+To install stars, copy the stars binary to the desired location (the sample
+makefiles put it in /usr/local/bin). Copy the resource file Stars.ad to
+/usr/lib/X11/app-defaults/Stars or append it to your $HOME/.Xdefaults file.
+Copy the formatted man page to wherever you keep your local doc (i use
+/usr/local/man/cat1 for imaging software), then add that location
+to your MANPATH.
+
+<DT><B>Productivity</B>
+<DD>None
+<DT><B>Safety</B>
+<DD>I have used this for years without harm.
+
+<DT><B>Work Planned</B>
+<DD>None
+
+<DT><B>Documentation</B>
+<DD>manual page.
+
+<DT><B>Verification</B>
+<DD>Simple execute stars with no arguments.
+
+<DT><B>Feedback</B>
+<DD>
+Ideas, comments, additions, deletions, suggestions, bug reports, code review,...
+e-mail Ronald Record at rr@ronrecord.com 
+
+</DL>
+</BODY>
+</HTML>

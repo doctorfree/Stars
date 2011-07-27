@@ -1,0 +1,45 @@
+CC = cc 
+XSLIBDIR = ../lib
+#DEBUG =  -g
+##
+## Compiler Defines
+## 
+DEFINES = -DSYSV -DSOCKETCONN -DTCPCONN -DTLICONN -DLAI_TCP \
+	   -DSTREAMWRITEMAX=4096 -DXSIGHT -DMOTIF -DSIXTEEN_COLORS
+
+CFLAGS = $(DEBUG) -nointl $(DEFINES) -I$(XSLIBDIR) 
+##
+## Libraries
+## X11 	X11 graphics library
+##
+##
+LIBS 	= 	$(XSLIBDIR)/libXs.a	\
+		-lXm 		\
+       		-lXt   		\
+       		-lX11 		\
+		-lx		\
+      		-lsocket	\
+      		-lPW	\
+		-lnsl_s
+
+.o:.c
+
+all: stars
+
+cp install:	all
+	-mkdir -p $(ROOT)/usr/games/X
+	cp stars $(ROOT)/usr/games/X/stars
+	-mkdir -p $(ROOT)/usr/lib/X11/app-defaults
+	cp Stars $(ROOT)/usr/lib/X11/app-defaults/Stars
+
+clean:
+	rm -f *.o
+
+clobber:	clean
+	rm -f stars
+
+stars : stars.o line.o
+	$(CC) $(CFLAGS) -o $@ $@.o line.o $(LIBS)
+
+stars.o: stars.c stars.h
+
