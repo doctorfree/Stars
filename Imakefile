@@ -2,10 +2,10 @@ XCOMM
 XCOMM	Imakefile for stars, by Ron Record
 XCOMM
         DEPLIBS = $(DEPXLIB)
-#		 BINDIR = /usr/local/bin
-#         MANDIR = /usr/local/man/man1
+         BINDIR = /usr/local/bin
+         MANDIR = /usr/local/man/man1
       MANSUFFIX = 1
-LOCAL_LIBRARIES = XmClientLibs 
+LOCAL_LIBRARIES = -lXm $(XTOOLLIB) $(XLIB) $(XMEXTRA_LIBS)
   SYS_LIBRARIES = -lm
        INCLUDES = -I.
            SRCS = stars.c line.c

@@ -7,20 +7,13 @@ XSLIBDIR = ../lib
 DEFINES = -DSYSV -DSOCKETCONN -DTCPCONN -DTLICONN -DLAI_TCP \
 	   -DSTREAMWRITEMAX=4096 -DXSIGHT -DMOTIF -DSIXTEEN_COLORS
 
-CFLAGS = $(DEBUG) -nointl $(DEFINES) -I$(XSLIBDIR) 
+CFLAGS = $(DEBUG) $(DEFINES) -I$(XSLIBDIR) 
 ##
 ## Libraries
 ## X11 	X11 graphics library
 ##
 ##
-LIBS 	= 	$(XSLIBDIR)/libXs.a	\
-		-lXm 		\
-       		-lXt   		\
-       		-lX11 		\
-		-lx		\
-      		-lsocket	\
-      		-lPW	\
-		-lnsl_s
+LIBS 	= -lXm -lXt -lX11
 
 .o:.c
 
